@@ -1,0 +1,32 @@
+.logo{
+    width: 85%;
+    margin: auto;
+}
+.logo h3 span{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 42px;
+    color: brown;
+}
+.logo h3{
+    color: #1C8EF9 ;
+}
+.navigation-bar{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-bar .left-area a{
+    text-decoration: none;
+    margin: 15px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navigation-bar .right-area a{
+    text-decoration: none;
+    margin: 15px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}

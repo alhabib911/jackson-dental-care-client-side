@@ -1,0 +1,67 @@
+.login-components h3{
+    text-align: center;
+    font-size: 24px;
+}
+.form-container {
+    display: flex;
+    justify-content: space-around;
+}
+.form-container input{
+    width: 350px;
+    height: 55px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid gainsboro;    
+}
+.form-container label{
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.form-container button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px 65px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #1C8EF9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container button:hover{
+    color: #fff;
+}
+.form-container h4{
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+.form-container a{
+    text-decoration: none;
+    color: #1C8EF9;
+}
+.login-components h5{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+.form-container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: 1px solid #c8c8c8;
+    padding: 10px;
+    color: #000;
+    border-radius: 10px;
+    margin-top: 0;
+    cursor: pointer;
+}
+.form-container span{
+    padding-left: 15px;
+}
+.form-container p:hover{
+    color: #1C8EF9;
+}
