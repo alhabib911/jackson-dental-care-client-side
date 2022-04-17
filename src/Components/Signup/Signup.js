@@ -64,11 +64,14 @@ const Signup = () => {
                     <label htmlFor="ConfirmPassword">Confirm Password</label> <br />
                     <input onBlur={handleConfirmPasswordBlur} type="password" name="ConfirmPassword" id="" placeholder='Confirm Your Password' required /> <br />
                     <p className='error'>{error}</p> <br />
-                    <input type="submit" value="Signup" />
-                    <h4>Already have an account? <Link to='/login'>Log In</Link></h4>
+                    <input className='signup-button' type="submit" value="Signup" />
+                    
                 </div>
+                
+                <div 
+                className='social-sign-up'>
+                    <h4>Already have an account? <Link to='/login'>Log In</Link></h4>
                 <h4>OR</h4>
-                <div className='social-sign-up'>
                     <SocialLogIn></SocialLogIn>
                 </div>
             </form>

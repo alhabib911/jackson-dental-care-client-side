@@ -1,0 +1,15 @@
+.not-found-page{
+margin-top: 10%;
+text-align: center;
+}
+.not-found-page h1{
+    color: red;
+}
+.not-found-page p{
+    color: rgb(234, 49, 49);
+}
+.not-found-page img{
+    width: 350px;
+    margin-bottom: 10px;
+    box-shadow: 0 15px 10px rgb(180, 180, 180);
+}
