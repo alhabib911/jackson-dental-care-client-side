@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "service": "Implants",
+      "details": "When youre dealing with missing, broken, or severely damaged teeth, your confidence can suffer. More importantly, these issues take a toll on your health. You deserve better. Talk to us about dental implant restorations.",
+      "image": "https://www.harmonydentalcare.com/wp-content/uploads/2017/11/harmonydentalcare_4.jpg",
+      "price": 2000
+    },
+    {
+      "id": 2,
+      "service": "Root Canal",
+      "details": "Root canals are probably the most notorious procedure in dentistry, but also the most misunderstood. While many people view them as “scary,” the truth is that a root canal is an effective treatment to stop pain and save your tooth.",
+      "image": "https://www.scottandderrydental.com/wp-content/uploads/2021/07/root-canal-without-crown-milton-on.jpg",
+      "price": 12000
+    },
+    {
+      "id": 3,
+      "service": "Extractions",
+      "details": "Our first priority is to save your tooth, but when tooth damage is so extensive that it cannot be repaired, a dental extraction may be necessary. Additionally, wisdom teeth often need to be extracted to make room in your jaw or improve your dental health. ",
+      "image": "https://pinnaclepeakdental.com/wp-content/uploads/2020/10/Extractions2.jpg",
+      "price": 1000
+    }
+  ]

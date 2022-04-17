@@ -65,3 +65,23 @@
 .form-container .signinwithgoogle:hover{
     color: #1C8EF9;
 }
+.social-log-in{
+    display: flex;
+    justify-content: center;
+}
+.social-log-in button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgba(192, 222, 251, 0.6);
+    padding: 10px 80px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.social-log-in button span{
+    margin-left: 15px;
+}
+.social-log-in button:hover{
+    background-color: rgba(147, 199, 247, 0.9);
+}

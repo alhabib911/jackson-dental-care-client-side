@@ -1,3 +1,59 @@
 .form-container .error{
     color: red;
 }
+.signup-form-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.signup-form-container input{
+    width: 350px;
+    height: 55px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid gainsboro;    
+}
+.signup-form-container label{
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.signup-form-container button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px 65px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #1C8EF9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signup-form-container button:hover{
+    color: #fff;
+}
+.signup-form-container h4{
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+.signup-form-container a{
+    text-decoration: none;
+    color: #1C8EF9;
+}
+.social-sign-up button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgba(192, 222, 251, 0.6);
+    padding: 10px 80px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.social-sign-up button span{
+    margin-left: 15px;
+}
+.social-sign-up button:hover{
+    background-color: rgba(147, 199, 247, 0.9);
+}

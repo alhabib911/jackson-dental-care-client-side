@@ -1,0 +1,16 @@
+.service{
+    width: 350px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0  10px 15px #beedff;
+}
+.service img{
+    width: 250px;
+    height: 150px;
+    padding-top: 10px;
+}
+.service p{
+    text-align: start;
+    padding: 0 10px;
+}

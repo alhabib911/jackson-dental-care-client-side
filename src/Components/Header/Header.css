@@ -1,39 +1,28 @@
-.logo{
-    width: 85%;
-    margin: auto;
+.navigation .logo{
+    text-decoration: none;
+    color: #00AF89;
+    font-size: 14px;
 }
-.logo h3 span{
+.navigation .logo:hover{
+    color: #ffffff;
+}
+.navigation .logo span{
     font-family: 'Pinyon Script', cursive;
-    font-size: 42px;
-    color: brown;
-}
-.logo h3{
-    color: #1C8EF9 ;
-}
-.navigation-bar{
-    width: 70%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.navigation-bar .left-area a{
-    text-decoration: none;
-    margin: 15px;
-    color: black;
-    font-size: 18px;
+    font-size: 45px;
+    color: #ffffff;
     font-weight: 600;
 }
-.navigation-bar .right-area a{
+.navigation a{
     text-decoration: none;
-    margin: 15px;
-    color: black;
+    margin-left: 25px;
+    color: #ffffff;
     font-size: 18px;
+}
+.navigation a:hover{
+    color: #00AF89;
     font-weight: 600;
 }
-nav .sign-out-btn{
-    border: none;
-    background-color: #fff;
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
+.navbar-container{
+    background-color: #15449B;
+    margin: 0 0 -25px 0;
 }

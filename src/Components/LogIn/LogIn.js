@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './LogIn.css'
-import { FcGoogle } from 'react-icons/fc';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import auth from '../../Firebase.init'
+import auth from '../../firebase.init'
+import SocialLogIn from './SocialLogIn';
+
+
 
 const LogIn = () => {
     const [email, SetEmail] = useState('')
@@ -14,22 +16,22 @@ const LogIn = () => {
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);
+    ] = useSignInWithEmailAndPassword(auth);
 
-      if (user){
-        navigate ('/home')
+    if (user) {
+        navigate('/home')
     }
 
-    const handleEmailBlur = event =>{
+    const handleEmailBlur = event => {
         SetEmail(event.target.value)
     }
-    const handlePasswordBlur =event => {
+    const handlePasswordBlur = event => {
         setPassword(event.target.value)
     }
 
-    const handleUserSignIn =event =>{
+    const handleUserSignIn = event => {
         event.preventDefault();
-        signInWithEmailAndPassword (email, password)
+        signInWithEmailAndPassword(email, password)
     }
 
     return (
@@ -50,9 +52,11 @@ const LogIn = () => {
                     <input type="submit" value="Continue" />
                     <h4>New to Jackson Dental Care? <Link to='/signup'>Create an Account</Link></h4>
                     <h5>OR</h5>
-                    <p className='signinwithgoogle'><FcGoogle></FcGoogle> <span>Signin with Google</span></p>
                 </div>
             </form>
+            <div className='social-log-in'>
+                <SocialLogIn></SocialLogIn>
+            </div>
         </div>
     );
 };
