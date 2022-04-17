@@ -11,6 +11,7 @@ const Service = (props) => {
 
     return (
         <div className='service-container'>
+            
             <div className="service">
                 <img src={image} alt="" />
                 <h4>Service: {service}</h4>

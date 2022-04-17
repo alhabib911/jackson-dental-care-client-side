@@ -37,7 +37,7 @@ const LogIn = () => {
     return (
         <div className='login-components'>
             <h3>Log In Now</h3>
-            <form onSubmit={handleUserSignIn} className='form-container'>
+            <form onSubmit={handleUserSignIn} className='login-form-container'>
                 <div>
                     <label htmlFor="email">Email</label> <br />
                     <input onBlur={handleEmailBlur} type="email" name="email" id="" placeholder='Your Email Please' required /> <br />
@@ -49,8 +49,8 @@ const LogIn = () => {
                         loading && <p>Loading...</p>
                     }
                     <p className='error'>{error?.message}</p>
-                    <input type="submit" value="Continue" />
-                    <h4>New to Jackson Dental Care? <Link to='/signup'>Create an Account</Link></h4>
+                    <input className='submit-lonin' type="submit" value="Continue" />
+                    <h4 className='singup-link'>New to Jackson Dental Care? <Link to='/signup'>Create an Account</Link></h4>
                     <h5>OR</h5>
                 </div>
             </form>
