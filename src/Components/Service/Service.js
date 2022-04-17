@@ -15,7 +15,7 @@ const Service = (props) => {
                 <img src={image} alt="" />
                 <h4>Service: {service}</h4>
                 <p>Service Details: {details}</p>
-                <h5>Service Fee: {price}</h5>
+                <h5>Service Fee:  {price}<small>BDT</small></h5>
                 <Link onClick={handleAddToCart} to='/checkout'>Add to cart</Link>
             </div>
          </div>
