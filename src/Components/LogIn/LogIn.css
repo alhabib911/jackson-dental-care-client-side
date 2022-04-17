@@ -47,7 +47,7 @@
     font-size: 18px;
     margin: 10px;
 }
-.form-container p{
+.form-container .signinwithgoogle{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,6 +62,6 @@
 .form-container span{
     padding-left: 15px;
 }
-.form-container p:hover{
+.form-container .signinwithgoogle:hover{
     color: #1C8EF9;
 }
