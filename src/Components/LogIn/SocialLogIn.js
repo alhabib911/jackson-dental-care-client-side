@@ -1,6 +1,7 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import React from 'react';
 import { FcGoogle } from 'react-icons/fc';
+import { Navigate } from 'react-router-dom';
 
 const auth = getAuth();
 const SocialLogIn = () => {
@@ -16,6 +17,9 @@ const SocialLogIn = () => {
             console.log(error);
         })
     }
+    
+    
+  
     return (
         <div>
             <button onClick={handleGoogleSignIn}><FcGoogle></FcGoogle><span>Google Log In</span></button>

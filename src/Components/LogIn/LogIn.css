@@ -77,7 +77,8 @@
 }
 .social-log-in{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .social-log-in button{
     display: flex;
@@ -96,7 +97,18 @@
     background-color: #0F4298;
     color: #fff;
 }
-.login-form-container .singup-link{
+.social-log-in .singup-link{
     font-size: 15px;
     margin-top: 10px;
+}
+.social-log-in .forget-btn{
+    background-color: #fff;
+    color: #000;
+}
+.social-log-in .forget-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.social-log-in{
+    display: flex;
 }

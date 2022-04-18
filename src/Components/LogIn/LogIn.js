@@ -4,6 +4,7 @@ import './LogIn.css'
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import SocialLogIn from './SocialLogIn';
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 
 
@@ -34,6 +35,13 @@ const LogIn = () => {
         signInWithEmailAndPassword(email, password)
     }
 
+    const handlePasswordReset = () => {
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                console.log('Email Sent');
+            })
+    }
+
     return (
         <div className='login-components'>
             <h3>Log In Now</h3>
@@ -50,11 +58,12 @@ const LogIn = () => {
                     }
                     <p className='error'>{error?.message}</p>
                     <input className='submit-lonin' type="submit" value="Continue" />
-                    <h4 className='singup-link'>New to Jackson Dental Care? <Link to='/signup'>Create an Account</Link></h4>
-                    <h5>OR</h5>
                 </div>
             </form>
             <div className='social-log-in'>
+                <button onClick={handlePasswordReset} className='forget-btn'>Forget Your Password?</button>
+                <h4 className='singup-link'>New to Jackson Dental Care? <Link to='/signup'>Create an Account</Link></h4>
+                <h5>OR</h5>
                 <SocialLogIn></SocialLogIn>
             </div>
         </div>

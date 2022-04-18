@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init'
 import './Signup.css'
 import SocialLogIn from '../LogIn/SocialLogIn';
+import { sendEmailVerification } from 'firebase/auth';
 
 const Signup = () => {
     const [fullname, SetFullName] = useState('')
@@ -47,8 +48,14 @@ const Signup = () => {
             return;
         }
         createUserWithEmailAndPassword(email, password)
+        verifyEmail()
     }
-
+    const verifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+        .then(() => {
+            console.log('Email Verification Sent');
+        })
+    }
 
     return (
         <div className='login-components'>
@@ -65,12 +72,12 @@ const Signup = () => {
                     <input onBlur={handleConfirmPasswordBlur} type="password" name="ConfirmPassword" id="" placeholder='Confirm Your Password' required /> <br />
                     <p className='error'>{error}</p> <br />
                     <input className='signup-button' type="submit" value="Signup" />
-                    
+                    <h4>Already have an account? <Link to='/login'>Log In</Link></h4>
                 </div>
                 
                 <div 
                 className='social-sign-up'>
-                    <h4>Already have an account? <Link to='/login'>Log In</Link></h4>
+                    
                 <h4>OR</h4>
                     <SocialLogIn></SocialLogIn>
                 </div>
