@@ -5,6 +5,7 @@ import auth from '../../firebase.init'
 import './Signup.css'
 import SocialLogIn from '../LogIn/SocialLogIn';
 import { sendEmailVerification } from 'firebase/auth';
+import { toast } from 'react-toastify';
 
 const Signup = () => {
     const [fullname, SetFullName] = useState('')

@@ -1,5 +1,5 @@
 .service{
-    width: 350px ;
+    width: 90% ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
     box-shadow: 0  10px 15px #9d9d9d;
 }
 .service img{
-    width: 250px;
+    width: 70%;
     height: 150px;
     padding-top: 10px;
 }

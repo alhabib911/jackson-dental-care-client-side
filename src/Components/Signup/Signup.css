@@ -68,3 +68,10 @@
 .social-sign-up button:hover{
     background-color: #0F4298;
 }
+
+@media screen and (max-width: 767px) {
+    .signup-form-container{
+        display: flex;
+        flex-direction: column;
+    }
+}

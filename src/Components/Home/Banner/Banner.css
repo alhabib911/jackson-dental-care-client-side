@@ -21,3 +21,16 @@
   padding-right: 550px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+@media screen and (max-width: 767px) {
+  .banner img{
+    width: 100%;
+    height: 250px;
+  }
+  .banner p{
+    display: block;
+  }
+  .banner h3{
+    display: block;
+  }
+}
