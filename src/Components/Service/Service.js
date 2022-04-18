@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Service.css'
 
 const Service = (props) => {
-    const { service, image, details, price } = props.service
-
-    const handleAddToCart = (service) => {
-        console.log('clicked');
+    const { id, service, image, details, price } = props.service
+    const navigate = useNavigate()
+    const navigateToServiceDetails = id => {
+        navigate(`/checkout/${id}`)
     }
 
     return (
@@ -17,7 +17,7 @@ const Service = (props) => {
                 <h4>Service: {service}</h4>
                 <p>Service Details: {details}</p>
                 <h5>Service Fee:  {price}<small>BDT</small></h5>
-                <Link onClick={handleAddToCart} to='/checkout'>Add to cart</Link>
+                <button onClick={ ()=> navigateToServiceDetails (id)}>Add to cart</button>
             </div>
          </div>
     );

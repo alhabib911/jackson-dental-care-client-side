@@ -16,7 +16,7 @@ const Signup = () => {
     const navigate = useNavigate()
 
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth)
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true})
 
     const handleFullNameBlur = event => {
         SetFullName(event.target.value)
@@ -48,15 +48,9 @@ const Signup = () => {
             setError('Please input minimum 8 Characters or longer')
             return;
         }
-        createUserWithEmailAndPassword(email, password)
-        verifyEmail()
+        createUserWithEmailAndPassword( email, password)
     }
-    const verifyEmail = () => {
-        sendEmailVerification(auth.currentUser)
-        .then(() => {
-            console.log('Email Verification Sent');
-        })
-    }
+  
 
     return (
         <div className='login-components'>

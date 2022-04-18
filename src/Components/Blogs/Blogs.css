@@ -1,0 +1,67 @@
+.blog-container{
+    text-align: center;
+    margin-top: 25px;
+    background-color: #f6f6f6;
+
+}
+.blog-container h2{
+    padding: 25px 0;
+    color: #15449B;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.blog-container .ans-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.blog-container .ques-1 span{
+    color: #15449B;
+}
+.blog-container .ques-1{
+    background-color: aliceblue;
+    padding: 10px 0;
+    box-shadow: 0 10px 10px rgb(192, 192, 192);
+    margin-bottom: 25px;
+}
+.blog-container .ques-1 p{
+    text-align: left;
+}
+.blog-container .ques-2{
+    background-color: aliceblue;
+    padding: 10px 0;
+    box-shadow: 0 10px 10px rgb(192, 192, 192);
+    margin-bottom: 25px;
+    
+}
+.blog-container .ques-2 span{
+    color: #15449B;
+}
+.blog-container .ques-2 p{
+    text-align: left;
+}
+.blog-container .ans-2{
+    margin: 10px 75px 10px 115px;
+}
+
+.blog-container .ques-3{
+    background-color: aliceblue;
+    padding: 10px 0;
+    box-shadow: 0 10px 10px rgb(192, 192, 192);
+    margin-bottom: 25px;
+    
+}
+.blog-container .other-services {
+    display: flex;
+    justify-content: space-evenly;
+}
+.blog-container .other-services p{
+    text-align: left;
+}
+.blog-container .ques-3 span{
+    color: #15449B;
+}
+.blog-container .ques-3 h6{
+    text-align: left;
+    margin-left: 175px;
+    padding-top: 15px;
+}

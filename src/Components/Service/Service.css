@@ -22,7 +22,7 @@
     padding: 0 10px;
     color: #3f3f3f;
 }
-.service a{
+.service button{
     text-decoration: none;
     background-color: #0F4498;
     padding: 10px 55px;
@@ -30,9 +30,9 @@
     font-weight: 500;
     border-radius: 5px;
     margin-bottom: 15px;
-    
+    border: none;
 }
-.service a:hover{
+.service button:hover{
     background-color: #1AC8A2;
     box-shadow: 0  10px 15px #b7e8fb;
 }

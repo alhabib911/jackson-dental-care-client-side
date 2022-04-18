@@ -1,0 +1,7 @@
+.checkin-container{
+    margin-top: 75px;
+}
+.checkin-container .service-details{
+    display: flex;
+    justify-content: center;
+}
