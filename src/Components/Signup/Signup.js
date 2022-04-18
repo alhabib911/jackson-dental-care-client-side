@@ -16,7 +16,7 @@ const Signup = () => {
     const navigate = useNavigate()
 
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true})
+    const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true})
 
     const handleFullNameBlur = event => {
         SetFullName(event.target.value)
@@ -66,6 +66,9 @@ const Signup = () => {
                     <label htmlFor="ConfirmPassword">Confirm Password</label> <br />
                     <input onBlur={handleConfirmPasswordBlur} type="password" name="ConfirmPassword" id="" placeholder='Confirm Your Password' required /> <br />
                     <p className='error'>{error}</p> <br />
+                    {
+                        loading && <p>Loading...</p>
+                    }
                     <input className='signup-button' type="submit" value="Signup" />
                     <h4>Already have an account? <Link to='/login'>Log In</Link></h4>
                 </div>

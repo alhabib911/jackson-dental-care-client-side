@@ -51,6 +51,7 @@
 .signup-form-container a{
     text-decoration: none;
     color: #1C8EF9;
+    font-weight: 500;
 }
 .social-sign-up button{
     display: flex;

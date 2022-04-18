@@ -101,6 +101,9 @@
     font-size: 15px;
     margin-top: 10px;
 }
+.social-log-in .singup-link a{
+    text-decoration: none;
+}
 .social-log-in .forget-btn{
     background-color: #fff;
     color: #000;

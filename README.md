@@ -1,21 +1,14 @@
 # Welcome to our new website Jackson Dental Care
 
-This Project Live site link of [Jackson Dental Care]().
+This Project Live site link of [Jackson Dental Care](https://jackson-dental-care.web.app/).
 
 ## Project Source code 
 
-This Project Source Code link of [Jackson Dental Care]().
+This Project Source Code link of [Jackson Dental Care](https://github.com/programming-hero-web-course-4/independent-service-provider-alhabib911).
 
-### Framework
-
-1. This project use React Bootstrap for style.
-2. use most Popular React js
 
 ### Deploy
 This project deploy in Firebase
-
-### Project Creator 
-Abdullah Al Habib
 
 ### Project Details
 <ul>
@@ -26,3 +19,11 @@ Abdullah Al Habib
     <li>About me page has own details with goal after 5 months</li>
 
 </ul>
+
+### Framework
+1. This project use React Bootstrap for style.
+2. use most Popular React js
+3. Customs hook for service details
+
+### Project Creator 
+Abdullah Al Habib
