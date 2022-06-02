@@ -6,9 +6,7 @@ import { Carousel } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        // <div className='banner'>
-        //     <img src={banner1} alt="" />            
-        // </div>
+       
         <div>
             <Carousel className='banner'>
                 <Carousel.Item>
@@ -42,7 +40,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Care For Your Smile</h3>
+                        <h3>Care For Your Smile be ready</h3>
                         <p>Committed To Excellence</p>
                     </Carousel.Caption>
                 </Carousel.Item>
